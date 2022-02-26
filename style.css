@@ -118,10 +118,10 @@ body{
 
     .contenedor-links-lista{
         display: flex;
-        justify-content: end;
+        justify-content: center;
         border-radius: 0.9rem;
         width: 5rem;
-        margin: auto;
+        margin: 1rem auto;
         padding: 0.5rem;
     }
 
