@@ -6,15 +6,13 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(244, 80, 135, 0.7), rgba(145, 152, 229, 0.7)), url(fondo.jpg);
+    background-image: linear-gradient(rgba(244, 80, 135, 0.7), rgba(145, 152, 229, 0.7)), url(img/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /* ---------- Header ---------- */
 .div-header{
-    background-color: black;
-    transition: all 500ms ease;
     position: fixed;
     z-index: 999;
     top: 0;
@@ -103,7 +101,7 @@ body{
         width: 40%;
         top: 15mm;
         left: 150%;
-        background-color: black;;
+        background-color: black;
         transition: all 500ms ease;
     }
     
@@ -138,14 +136,15 @@ body{
 
 /* ---------- Clases situacionales ---------- */
 .scroll{
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(0, 0, 0);
 }
 
 
 
 /* ---------- Presentacion ---------- */
 .div-presentacion{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
     box-sizing: border-box;
     display: flex;
     width: 100%;
@@ -162,7 +161,7 @@ body{
     font-size: 1.6rem;
 }
 
-/* ---------- Presentacion a mas de 1024px de ancho ---------- */
+/* ---------- Presentacion a mas de 821px de ancho ---------- */
 @media screen and (min-width: 821px){
     .contenedor-presentacion{
         display: inline-flex;
@@ -174,6 +173,7 @@ body{
     .foto-perfil{
         width: 10rem;
         border-radius: 10rem;
+        margin: 1rem;
     }
     
     .div-texto-presentacion{
@@ -184,6 +184,7 @@ body{
     }
 }
 
+/* ---------- Presentacion a menos de 820px de ancho ---------- */
 @media screen and (max-width: 820px){
     .contenedor-presentacion{
         display: inline-block;
@@ -194,7 +195,7 @@ body{
     
     .foto-perfil{
         display: flex;
-        margin: auto;
+        margin: 1rem auto;
         width: 10rem;
         border-radius: 10rem;
     }
@@ -206,5 +207,60 @@ body{
     }
 }
 
+/* ---------- Pagina 2 ---------- */
+.pagina-2{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.div-sobre-mi{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
 
+.sobre-mi{
+    width: 35rem;
+    margin: 1rem;
+    padding: 0.7rem;
+}
 
+.habilidades{
+    width: 35rem;
+    margin: 1rem;
+    padding: 0.7rem;
+}
+
+.contenedor-habilidades{
+    padding: 0.7rem;
+}
+
+.contenedor-habilidades img{
+    margin-right: 0.2rem;
+}
+
+@media screen and (max-width: 797px){
+    .div-sobre-mi{
+        display: block;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .sobre-mi{
+        width: 90%;
+        margin: 1rem auto;
+        padding: 0.7rem;
+    }
+    
+    .habilidades{
+        width: 90%;
+        margin: 1rem auto;
+        padding: 0.7rem;
+    }
+    
+
+    .contenedor-habilidades{
+        padding: 0.7rem;
+    }
+}
