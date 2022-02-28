@@ -6,13 +6,18 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(244, 80, 135, 0.7), rgba(145, 152, 229, 0.7)), url(img/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.pagina-1{
+    background-image: url(img/fondo3.jpg);
+    background-size: cover;
+}
+
 /* ---------- Header ---------- */
 .div-header{
+    transition: all 500ms ease;
     position: fixed;
     z-index: 999;
     top: 0;
@@ -21,8 +26,8 @@ body{
 }
 
 .div-header a{
-    color: white;
-    font-weight: bolder;
+    color: 	#ffffff;
+    font-weight: bold;
 }
 
 #check{
@@ -36,7 +41,7 @@ body{
         overflow: hidden;
         justify-content: space-between;
         align-items: center;
-        width: 1024px;
+        width: 1200px;
         margin: auto;
         height: 15mm
     }
@@ -71,7 +76,8 @@ body{
     }
     
     .contenedor-links-lista:hover{
-        background-color: rgb(244, 80, 135);
+        background-color: #efbbff52;
+        transition: all 500ms ease-out;
     }
     
 }
@@ -101,7 +107,7 @@ body{
         width: 40%;
         top: 15mm;
         left: 150%;
-        background-color: black;
+        background-color: #be9b7b;
         transition: all 500ms ease;
     }
     
@@ -129,21 +135,22 @@ body{
     }
 
     .contenedor-links-lista:hover{
-        background-color: rgb(244, 80, 135);
+        background-color: 	#be9b7b;
     }
 
 }
 
 /* ---------- Clases situacionales ---------- */
 .scroll{
-    background-color: rgb(0, 0, 0);
+    background-color: 	#250025;
+    box-shadow: 0 0 2rem black;
 }
 
 
 
 /* ---------- Presentacion ---------- */
 .div-presentacion{
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: #00000086;
     overflow: hidden;
     box-sizing: border-box;
     display: flex;
@@ -152,12 +159,13 @@ body{
 }
 
 .div-presentacion h2{
-    color: aliceblue;
+    color: 	#ffffff;
     font-size: 1.2rem;
 }
 
 .div-presentacion h1{
-    color: rgba(244, 80, 135);
+    color: 		#d896ff;
+    font-weight: bolder;
     font-size: 1.6rem;
 }
 
@@ -209,11 +217,24 @@ body{
 
 /* ---------- Pagina 2 ---------- */
 .pagina-2{
-    background-color: white;
+    background-color:#f8e0ff;
+    background-image: url(img/fondo4.jpg);
+    background-size: cover;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
+
+.pagina-2 h2{
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+
+.pagina-2 p, h2{
+    color: #110011;
+    font-size: 1.5rem;
+}
+
 .div-sobre-mi{
     display: flex;
     justify-content: center;
@@ -233,11 +254,16 @@ body{
 }
 
 .contenedor-habilidades{
-    padding: 0.7rem;
 }
 
 .contenedor-habilidades img{
     margin-right: 0.2rem;
+}
+
+.mi-cv{
+    width: 35rem;
+    margin: 1rem;
+    padding: 0.7rem;
 }
 
 @media screen and (max-width: 797px){
@@ -262,5 +288,10 @@ body{
 
     .contenedor-habilidades{
         padding: 0.7rem;
+    }
+
+    /* ---------- Animaciones ---------- */
+    .animado{
+        opacity: 100%;
     }
 }
