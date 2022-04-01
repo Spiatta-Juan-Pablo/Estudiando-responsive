@@ -6,8 +6,7 @@
 }
 
 body{
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: block;
 }
 
 .pagina-1{
@@ -150,7 +149,7 @@ body{
 
 /* ---------- Presentacion ---------- */
 .div-presentacion{
-    background-color: #00000086;
+    background-color: #000000ad;
     overflow: hidden;
     box-sizing: border-box;
     display: flex;
@@ -160,7 +159,7 @@ body{
 
 .div-presentacion h2{
     color: 	#ffffff;
-    font-size: 1.2rem;
+    font-size: 2vw;
 }
 
 .div-presentacion h1{
@@ -217,53 +216,76 @@ body{
 
 /* ---------- Pagina 2 ---------- */
 .pagina-2{
-    background-color:#f8e0ff;
-    background-image: url(img/fondo4.jpg);
     background-size: cover;
+    box-shadow: 0 0 2rem #110011;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)) , url(img/fondo4.jpg);
+    padding: 20mm 0;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
 }
 
 .pagina-2 h2{
     font-weight: bolder;
-    margin: 1rem 0;
 }
 
-.pagina-2 p, h2{
+.pagina-2 h2{
     color: #110011;
+    margin: 0 3mm;
+    font-size: 1.5rem;
+}
+
+.pagina-2 p{
+    color: #110011;
+    margin: 2mm 5mm;
     font-size: 1.5rem;
 }
 
 .div-sobre-mi{
     display: flex;
-    justify-content: center;
     padding: 1rem;
 }
 
 .sobre-mi{
+    background-color: #11001142;
+    box-shadow: 2mm 2mm 5mm #1100117c;
+    border-radius: 1rem;
     width: 35rem;
     margin: 1rem;
     padding: 0.7rem;
 }
 
 .habilidades{
+    background-color: #11001142;
+    box-shadow: 2mm 2mm 5mm #1100117c;
+    border-radius: 1rem;
     width: 35rem;
     margin: 1rem;
-    padding: 0.7rem;
+    padding: 0.8rem;
 }
 
 .contenedor-habilidades{
+    margin: 2mm 5mm;
 }
 
 .contenedor-habilidades img{
     margin-right: 0.2rem;
 }
 
-.mi-cv{
-    width: 35rem;
+.boton-cv{
+    background-color: #ffffff77;
+    color: #110011;
+    display: flex;
+    justify-content: center;
+    transition: all 300ms ease-in;
+    border-radius: 1rem;
+    width: 10rem;
     margin: 1rem;
-    padding: 0.7rem;
+    padding: 1rem;
+}
+
+.boton-cv:hover{
+    background-color:rgba(17, 0, 17, 0.445);
+    color: #ffffff;
 }
 
 @media screen and (max-width: 797px){
@@ -289,9 +311,19 @@ body{
     .contenedor-habilidades{
         padding: 0.7rem;
     }
+}
 
-    /* ---------- Animaciones ---------- */
-    .animado{
-        opacity: 100%;
-    }
+/* ---------- Pagina 3 ---------- */
+.pagina-3{
+
+}
+
+.div-proyectos{
+}
+
+
+
+/* ---------- Animaciones ---------- */
+.animado{
+    opacity: 100%;
 }
