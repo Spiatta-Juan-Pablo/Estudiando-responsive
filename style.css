@@ -159,13 +159,13 @@ body{
 
 .div-presentacion h2{
     color: 	#ffffff;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .div-presentacion h1{
     color: 		#d896ff;
     font-weight: bolder;
-    font-size: 1.6rem;
+    font-size: 4vw;
 }
 
 /* ---------- Presentacion a mas de 821px de ancho ---------- */
